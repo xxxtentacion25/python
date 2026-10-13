@@ -1,0 +1,13 @@
+import numpy as np
+a = np.array([10, 20, 30, 40])
+b = np.array([5, 15, 25, 35])
+print("***ARTHIMATIC OPERATION***")
+print("Array A:", a)
+print("Array B:", b)
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("*** Statistical operations ***")
+print("Mean of A:", np.mean(a))
+print("Standard Deviation of A:", np.std(a))
+'poly2[i+1]=poly[i+1]+ty'

@@ -1,0 +1,54 @@
+print("LIST EXPERIMENT")
+fruits = ["apple", "banana", "cherry"]
+print("original list:", fruits)
+fruits.append("orange")
+print("after append:", fruits)
+fruits.insert(1, "mango")
+print("after insert:", fruits)
+fruits.remove("banana")
+print("after remove:", fruits)
+print("sliced list(first two):", fruits[:2])
+print("all fruits")
+for fruit in fruits:
+    print("-", fruit)
+print("\n")
+print("TUPLE EXPERIMENT")
+numbers = (10, 20, 30, 40, 50)
+print("tuple :", numbers)
+print("first element:", numbers[0])
+print("middle elements:", numbers[1:4])
+print("count of 20:", numbers.count(20))
+print("index of 30:", numbers.index(30))
+print("\n")
+print("SET EXPERIMENT")
+colors = {"red", "green", "blue"}
+print("original set:", colors)
+colors.add("yellow")
+print("after add:", colors)
+colors.discard("green")
+print("after discard:", colors)
+primary_colors = {"red", "green", "yellow"}
+color1 = {"red", "blue", "green"}
+print("union:", colors | color1)
+print("intersection:", colors & color1)
+print("\n")
+print("DICTIONARY EXPERIMENT")
+student = {
+    "name": "mohankumar",
+    "age": 20,
+    "course": "information technology"
+}
+print("original dictionary:", student)
+print("student name:", student["name"])
+student["grade"] = "A"
+print("after adding grade:", student)
+student["age"] = 21
+print("after updating age:", student)
+del student["course"]
+print("after deleting course:", student)
+print("keys:")
+for key in student.keys():
+    print("-", key)
+print("values:")
+for value in student.values():
+    print("-", value)

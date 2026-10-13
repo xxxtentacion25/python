@@ -1,0 +1,16 @@
+def divide_numbers(a, b):
+    try:
+        result = a / b
+        return result
+    except ZeroDivisionError:
+        print("Error: Division by zero is not allowed.")
+    except TypeError:
+        print("Error: Invalid input type. Please enter numbers only.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+print("*** VALID EXCEPTION ***")
+print(divide_numbers(10, 2))
+print("** DIVISION BY ZERO ***")
+print(divide_numbers(10, 0))
+print("*** VALID TYPE ***")
+print(divide_numbers(10, 'a'))

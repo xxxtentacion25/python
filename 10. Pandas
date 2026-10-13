@@ -1,0 +1,15 @@
+import pandas as pd
+import sys
+print("*** DATA SETS CREATED ***")
+data = {
+    'Name': ['Ravi', 'Priya', 'Kiran', 'Meena'],
+    'Age': [23, 25, 22, 28],
+    'Marks': [88, 92, 79, 85]
+}
+df = pd.DataFrame(data)
+print("*** DISAPLAY DATSETS ***")
+print("Student Data:\n", df)
+print("\nAverage Marks:", df['Marks'].mean())
+print("Maximum Marks:", df['Marks'].max())
+print("Minimum Marks:", df['Marks'].min())
+print("\nSummary Statistics:\n", df.describe())

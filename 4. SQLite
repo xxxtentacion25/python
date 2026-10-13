@@ -1,0 +1,14 @@
+import sqlite3
+con = sqlite3.connect("student.db")
+con.execute("CREATE TABLE IF NOT EXISTS student (roll INTEGER, name TEXT)")
+print("***INSERT DATA***")
+con.execute("INSERT INTO student VALUES (1, 'Mohsnkumar')")
+con.execute("INSERT INTO student VALUES (2, 'Srikanth')")
+con.execute("INSERT INTO student VALUES (3, 'Dhanalakshmi')")
+con.execute("INSERT INTO student VALUES (4, 'Kamalakkannan')")
+print("RECORD INSERT SUCCESSFULLY")
+con.commit()
+print("****STUDENT RECORDS****")
+for row in con.execute("SELECT * FROM student"):
+    print(row)
+con.close()

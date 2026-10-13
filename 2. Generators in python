@@ -1,0 +1,18 @@
+def my_generator():
+    yield 1
+    yield 2
+    yield 3
+print("Basic Generator Example:")
+gen = my_generator()
+print(next(gen))
+print(next(gen))
+print(next(gen))
+def infinite_sequence():
+    num = 0
+    while True:
+        yield num
+        num += 1
+print("\nGenerator with Loop:")
+gen = infinite_sequence()
+for i in range(5):
+    print(next(gen))

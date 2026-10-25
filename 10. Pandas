@@ -7,7 +7,7 @@ data = {
     'Marks': [88, 92, 79, 85]
 }
 df = pd.DataFrame(data)
-print("*** DISAPLAY DATSETS ***")
+print("*** DISPLAY DATASETS ***")
 print("Student Data:\n", df)
 print("\nAverage Marks:", df['Marks'].mean())
 print("Maximum Marks:", df['Marks'].max())
